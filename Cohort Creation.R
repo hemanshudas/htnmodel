@@ -227,8 +227,7 @@ franklin_sbpinc <- function (sample,age_till) {
   return(dfM1)      
 }
 
-setwd("E:/Hemanshu_OneDrive/OneDrive - Indian School of Business/NCD Modelling/Econ Eval R Code/Essential Simulation Input Files/Input SAGE File_Oct19")
-sim_inp <- read.csv("SAGE_Cleaned_19Oct.csv")
+sim_inp <- read.csv("SAGE_Cleaned_19Oct.csv")   #Cleaned SAGE File as input
 
 male_dist <- c(0.229,0.199,0.165,0.132,0.113,0.079,0.053,0.03)
 female_dist <- c(0.224,0.199,0.158,0.136,0.114,0.081,0.055,0.033)
@@ -241,8 +240,7 @@ male_samp <- samplegen(output,0,100,1)
 female_samples <- franklin_sbpinc(female_samp,age_till = 120)
 male_samples <- franklin_sbpinc(male_samp,age_till = 120)
 
-setwd("E:/Hemanshu_OneDrive/OneDrive - Indian School of Business/NCD Modelling/Econ Eval R Code/TrialnError")
-
+#Output files which will be input for thr Globorisk calculator
 write.csv(female_samples,"Females_Globorisk_Input.csv")
 write.csv(male_samples,"Males_Globorisk_Input.csv")
 
