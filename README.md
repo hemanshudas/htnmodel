@@ -12,6 +12,6 @@ There are broadly five steps to reproduce the results:
 
 To perform sensitivity analysis, the user will have to change the relevant parameters in line# 735, 765, 766 of the simulation code (step# 4). 
 
-Also, the run time of each scenario with 1000 simulation takes approximately using 6 days if run on single core processor (3.3Ghz). We leveraged AWS EC2 servers and Python multiprocessing ability to run the simulation runs of each scenario in parallel to generate the simulation outputs faster. The same has been implemented in the python codes, but the user will have to assess the number of available cores and modify the scenarios that are run in parallel.
+Also, the run time of each scenario with 1000 simulation takes approximately 6 days if run on single core processor (3.3Ghz). We leveraged AWS EC2 servers and Python multiprocessing ability to run the simulation runs of each scenario in parallel to generate the simulation outputs faster. The same has been implemented in the python codes, but the user will have to assess the number of available cores and modify the scenarios that are run in parallel.
 
 Thanks. 
